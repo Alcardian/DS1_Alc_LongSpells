@@ -1,4 +1,4 @@
-# Alcardian's Long Spells (Nishi_duration)
+# Alcardian's Long Spells
 ## Description
 ### Alcardian's Long Spells
 A small spell mod that increases spell duration & adds some smaller changes
