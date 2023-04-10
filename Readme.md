@@ -5,6 +5,7 @@ A small spell mod that increases spell duration & adds some smaller changes
 
 ### Features:
 * Changed duration on most buffs & summons to 3600 seconds (1h). 
+* Charm duration set to 900 seconds (15 min).
 * Added "updates_on_transformed = false;" to non-LOA buffs to prevent spell from playing its effects on transformed creatures. Same as non-modded/unchanged LOA buffs have. 
 * Increased XP from "Healing Wind" to better match "Battle Healing"
 
