@@ -44,3 +44,8 @@ Only host in multiplayer needs the mod for it to be enabled. Mod doesn't break c
 ### TODO
 * Look into "Influence & control" spell category
 
+### Package mod using source
+* Use "TankCreator2_ds2", "TankCreator2.exe"
+  * Source, select the folder containing your folder structure. Like the folder containing the "world" folder.
+  * Output, name it <ModName>.dsres
+  * Select Format "DS & LOA"
