@@ -375,7 +375,7 @@
 		cast_experience = (#magic*.35)+1;
 		cast_range = 12;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*2.7-.7;
@@ -395,7 +395,7 @@
 			{
 				alteration = alter_dexterity;
 				description = "raise dexterity";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				value = 2;
 			}
@@ -1156,7 +1156,7 @@
 		cast_experience = (#magic*.3)+1;
 		cast_range = 3;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*4.2-.7);
@@ -1174,7 +1174,7 @@
 			{
 				alteration = ALTER_MELEE_DAMAGE_MAX;
 				description = "Raise Melee Damage";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = 1.1+(#magic*.6);
@@ -1225,7 +1225,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 15+(#magic*1.56);
+		effect_duration = 900;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#maxlife*2.8);
@@ -1283,7 +1283,7 @@
 		cast_experience = 2+(#magic*0.15);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*5.5-0.7;
@@ -1302,7 +1302,7 @@
 			{
 				alteration = alter_chance_to_hit_melee;
 				description = "Increase chance to hit";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = ((#magic*0.1)+1);
@@ -1350,7 +1350,7 @@
 		cast_experience = (#magic*.22);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*7.4-0.7);
@@ -1370,7 +1370,7 @@
 			{
 				alteration = alter_chance_to_hit_melee;
 				description = "Increase melee chance to hit";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = (#magic*0.08)+1;
@@ -1843,7 +1843,7 @@
 		cast_range = 8;
 		cast_reload_delay = 1;
 		command_cast = true;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 1;
 		mana_cost_modifier = (#magic*4.87)+.9;
@@ -1905,7 +1905,7 @@
 		cast_experience = (#magic*.3);
 		cast_range = 16;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*6.1-0.7;
@@ -1924,7 +1924,7 @@
 			{
 				alteration = alter_ranged;
 				description = "Increase ranged";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = (#magic*0.013)+5;
@@ -1972,7 +1972,7 @@
 		cast_experience = (#magic*0.3);
 		cast_range = 14;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)+5.9-0.7;
@@ -1992,7 +1992,7 @@
 			{
 				alteration = alter_dexterity;
 				description = "Increase dex";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = 1;
@@ -2042,7 +2042,7 @@
 		cast_experience = (#magic*.28);
 		cast_range = 14;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*5-.7);
@@ -2062,7 +2062,7 @@
 			{
 				alteration = alter_chance_to_hit_ranged;
 				description = "Ranged To Hit Bonus";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*.45)+1;
 			}
 		}
@@ -3179,7 +3179,7 @@
 		attack_damage_modifier_min = (#magic+1)*0.95+0.7;
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic*8);
@@ -3198,7 +3198,7 @@
 			{
 				alteration = alter_armor;
 				description = "Reactive Armor";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*0.26)-1.4;
 				is_single_instance = false;
 			}
@@ -3603,7 +3603,7 @@
 		attack_damage_modifier_min = 1.5+(#magic*0.35);
 		cast_reload_delay = 1;
 		cast_range = 8;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic*6.2);
@@ -3619,7 +3619,7 @@
 			{
 				alteration = alter_armor;
 				description = "Flame Armor";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*0.35)-1.4;
 				is_single_instance = false;
 			}
@@ -3792,7 +3792,7 @@
 		attack_damage_modifier_max = (#magic*0.845)+1;
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (((#magic+1)*6.9)-0.7);
@@ -3814,7 +3814,7 @@
 			{
 				alteration = alter_armor;
 				description = "Reactive Armor";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*0.258);
 				is_single_instance = false;
 			}
@@ -5271,8 +5271,7 @@
 		cast_experience = (#magic*.33);
 		cast_range = 15;
 		cast_reload_delay = 1;
-		// TODO change balance spells?
-		effect_duration = (#magic*1.59)+33;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*9.25-0.7);
@@ -5496,8 +5495,9 @@
 		apply_enchantments = false;
 		cast_experience = (#magic*.15);
 		cast_range = 10;
-		cast_reload_delay = 5;
-		effect_duration = 5;
+		// Double duration & delay
+		cast_reload_delay = 10;
+		effect_duration = 10;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic) * 6);
@@ -5516,8 +5516,7 @@
 				alteration = alter_life;
 				description = "heal life";
 				initial_delay = 0.5;
-				// TODO unchanged for reconstitution
-				duration = 5.0;
+				duration = 10.0;
 				frequency = 0.5;
 				value = (#magic-12)*0.64;
 			}
@@ -5869,8 +5868,9 @@
 		cast_experience = (#magic*0.85)+5;
 
 		cast_range = 10;
-		cast_reload_delay = 3;
-		effect_duration = 3;
+		// Doubled duration & delay
+		cast_reload_delay = 6;
+		effect_duration = 6;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*5.15;
@@ -5890,7 +5890,7 @@
 			{
 				alteration = alter_life;
 				description = "healing windspell";
-				duration = 3.0;
+				duration = 6.0;
 				frequency = 0.3;
 				initial_delay = 1.0;
 				value = (((#magic*0.9)+2)*1.3);
@@ -6681,7 +6681,7 @@
 		cast_experience = (#magic*.1);
 		cast_range = 9;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*17.25-0.7);
@@ -6700,21 +6700,21 @@
 			{
 				alteration = alter_intelligence;
 				description = "Insight";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*0.05)+1;
 			}
 			[*]
 			{
 				alteration = alter_nature_magic;
 				description = "Good Skill";
-				duration = 7200;
+				duration = 3600;
 				value = 1;
 			}
 			[*]
 			{
 				alteration = alter_combat_magic;
 				description = "Dark Skill";
-				duration = 7200;
+				duration = 3600;
 				value = 1;
 			}
 		}
@@ -6761,7 +6761,7 @@
 		cast_experience = (#magic*.18);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*4.8-0.7;
@@ -6780,7 +6780,7 @@
 			{
 				alteration = alter_intelligence;
 				description = "Insight";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic+2)*0.06;
 			}
 		}
@@ -6826,7 +6826,7 @@
 		cast_experience = (#magic*0.3);
 		cast_range = 10;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*6.5-0.7;
@@ -6847,7 +6847,7 @@
 			{
 				alteration = alter_intelligence;
 				description = "Insight";
-				duration = 7200;
+				duration = 3600;
 				value = ((#magic+1)*0.035);
 			}
 		}
@@ -6962,7 +6962,7 @@
 		cast_experience = (#magic*.25)+1;
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*7-.8;
@@ -6981,7 +6981,7 @@
 			{
 				alteration = alter_strength;
 				description = "Raise Strength";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = 1;
@@ -7030,7 +7030,7 @@
 		cast_experience = (#magic*.28);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*8.5-0.7);
@@ -7050,7 +7050,7 @@
 			{
 				alteration = alter_strength;
 				description = "Raise Strength";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = 1;
@@ -7502,8 +7502,7 @@
 		cast_experience = (#magic*.27);
 		cast_range = 15;
 		cast_reload_delay = 1;
-		// TODO change balance spells?
-		effect_duration = (#magic*1.775)+33;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*10.5-0.7);
@@ -7864,7 +7863,7 @@
 		cast_experience = (#magic*.15)+1;
 		cast_range = 9;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*2.1-.8;
@@ -7885,7 +7884,7 @@
 			{
 				alteration = alter_armor;
 				description = "Magic Armor";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*0.7);
 				is_single_instance = false;
 			}
@@ -7932,7 +7931,7 @@
 		cast_experience = (#magic*0.25);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*6.7-.7;
@@ -7953,7 +7952,7 @@
 			{
 				alteration = alter_armor;
 				description = "Magic Armor";
-				duration = 7200;
+				duration = 3600;
 				value = ((#magic-26)*0.6)+11.6;
 			}
 		}
@@ -8324,8 +8323,7 @@
 		cast_experience = (#magic*.3);
 		cast_range = 15;
 		cast_reload_delay = 1;
-		// TODO change balance spells?
-		effect_duration = (#magic*2.55)+33;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*10.6-0.7;
@@ -8530,7 +8528,7 @@
 		cast_experience = (#magic*0.15);
 		cast_range = 10;
 		cast_reload_delay = 5;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic);
@@ -8549,7 +8547,7 @@
 			{
 				alteration = alter_mana_recovery_unit;
 				description = "Charge Mana";
-				duration = 7200;
+				duration = 3600;
 				value = 1;
 			}
 			[*]
@@ -8605,7 +8603,7 @@
 		cast_experience = (#magic*.2);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*2-.7);
@@ -8623,7 +8621,7 @@
 			{
 				alteration = alter_mana_shield;
 				description = "Mana shield";
-				duration = 7200;
+				duration = 3600;
 				value = 50;
 			}
 		}
@@ -9033,7 +9031,7 @@
 		cast_experience = (#magic*.2);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*7)+1;
@@ -9053,7 +9051,7 @@
 			{
 				alteration = alter_strength;
 				description = "raise strength";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				value = (#magic*0.01)+1;
 			}
@@ -9523,7 +9521,7 @@
 		cast_experience = (#magic*0.22)+1;
 		cast_range = 13;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 3;
 		mana_cost_modifier = (#magic*2.4);
@@ -9542,7 +9540,7 @@
 			{
 				alteration = alter_melee_damage_min;
 				description = "Raise Minimun Damage";
-				duration = 7200;
+				duration = 3600;
 				initial_delay = 0.25;
 				value = ((#magic+10)*0.078);
 			}
@@ -9550,7 +9548,7 @@
 			{
 				alteration = alter_melee_damage_max;
 				description = "Raise Maximum Damage";
-				duration = 7200;
+				duration = 3600;
 				initial_delay = 0.25;
 				value = ((#magic+10)*0.14);
 			}
@@ -9610,7 +9608,7 @@
 		cast_experience = (#magic*.21);
 		cast_range = 12;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*13.6-0.7);
@@ -9630,7 +9628,7 @@
 			{
 				alteration = alter_life_recovery_unit;
 				description = "Raise Healing";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = 1;
@@ -9639,7 +9637,7 @@
 			{
 				alteration = alter_mana_recovery_unit;
 				description = "Raise Mana Recovery";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = 1;
@@ -9689,7 +9687,7 @@
 		cast_experience = (#magic*.12);
 		cast_range = 9;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 1;
 		mana_cost_modifier = (#magic*6.6);
@@ -9709,14 +9707,14 @@
 			{
 				alteration = alter_reflect_damage;
 				description = "Reflect Damage";
-				duration = 7200;
+				duration = 3600;
 				value = 30;
 			}
 			[*]
 			{
 				alteration = alter_reflect_damage_chance;
 				description = "Reflect Damage chance";
-				duration = 7200;
+				duration = 3600;
 				value = 100;
 			}
 		}
@@ -9763,7 +9761,7 @@
 		cast_experience = (#magic*.2);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 3;
 		mana_cost_modifier = (#magic*4.2);
@@ -9782,7 +9780,7 @@
 			{
 				alteration = alter_life_recovery_unit;
 				description = "Raise Healing";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = (#magic*0.0475);
@@ -9925,7 +9923,7 @@
 		cast_experience = (#magic*.25);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = (#magic*1.95)+33;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*7.2-0.7;
@@ -9944,7 +9942,7 @@
 			{
 				alteration = alter_nature_magic_to_combat_magic;
 				description = "transfer magic";
-				duration = (#nature_magic_level*1.95)+33;
+				duration = 3600;
 				frequency = 0;
 				value = (#nature_magic_level-#combat_magic_level);
 			}
@@ -9952,7 +9950,7 @@
 			{
 				alteration = alter_nature_magic;
 				description = "transfer magic";
-				duration = (#nature_magic_level*1.95)+33;
+				duration = 3600;
 				frequency = 0;
 				value = (-#combat_magic_level);
 			}
@@ -10891,7 +10889,7 @@
 		attack_damage_modifier_max = ((#magic*1.27)+1);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*4.5-.7;
@@ -10910,7 +10908,7 @@
 			{
 				alteration = alter_armor;
 				description = "Reactive Armor";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*0.345);
 				is_single_instance = false;
 			}
@@ -11335,7 +11333,7 @@
 		cast_experience = (#magic*.1);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 1;
 		mana_cost_modifier = (#magic*3.2);
@@ -11354,7 +11352,7 @@
 			{
 				alteration = alter_armor;
 				description = "Magic Armor";
-				duration = 7200;
+				duration = 3600;
 				value = (#magic*0.67)-1.4;
 			}
 		}
@@ -11616,7 +11614,7 @@
 		cast_experience = (#magic*.12);
 		cast_range = 10;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*17.4-0.7);
@@ -11636,7 +11634,7 @@
 			{
 				alteration = alter_strength;
 				description = "Raise Strength";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = ((#magic*0.034)+1);
@@ -11645,7 +11643,7 @@
 			{
 				alteration = alter_dexterity;
 				description = "Raise Dexterity";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = ((#magic*0.0575)+1);
@@ -11654,7 +11652,7 @@
 			{
 				alteration = alter_intelligence;
 				description = "Raise intelligence";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = ((#magic*0.045)+1);
@@ -11704,7 +11702,7 @@
 		cast_experience = (#magic*.11);
 		cast_range = 11;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*11.8-0.7);
@@ -11724,7 +11722,7 @@
 			{
 				alteration = alter_chance_to_hit_melee;
 				description = "Raise ALTER CHANCE TO HIT MELEE";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = (#magic*0.1157)-4;
@@ -11733,7 +11731,7 @@
 			{
 				alteration = alter_chance_to_hit_ranged;
 				description = "Raise ALTER CHANCE TO HIT RANGED";
-				duration = 7200;
+				duration = 3600;
 				frequency = 0;
 				initial_delay = 0.25;
 				value = (#magic*0.1157)-4;
@@ -11911,7 +11909,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 89;
 		required_level = 69;
@@ -12035,7 +12033,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15-.7;
@@ -12163,7 +12161,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 41;
 		required_level = 21;
@@ -12290,7 +12288,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 112;
 		required_level = 94;
@@ -12432,7 +12430,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*17-.7;
@@ -12575,7 +12573,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15-.7;
@@ -12699,7 +12697,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*16-.7;
@@ -12824,7 +12822,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15-.7;
@@ -12952,7 +12950,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*14-.7;
@@ -13076,7 +13074,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15-.7;
@@ -13201,7 +13199,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15-.7;
@@ -13327,8 +13325,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		// TODO not touched for helper spell due to not having played around with the spell
-		effect_duration = (#magic*14.2865);
+		effect_duration = 3600;
 		required_level = 21;
 		max_level = 44;
 		is_one_shot = true;
@@ -13389,8 +13386,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		// TODO increased helper scroll to 5 minutes. Haven't played around with the spell so more conservative with time
-		effect_duration = 300;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 60;
 		requires_line_of_sight = true;
@@ -13441,7 +13437,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 95;
 		required_level = 75;
@@ -13565,7 +13561,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*14-.7;
@@ -13693,7 +13689,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 81;
 		required_level = 61;
@@ -13817,7 +13813,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15-.7;
@@ -13945,7 +13941,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 106;
 		required_level = 86;
@@ -14070,7 +14066,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 112;
 		required_level = 100;
@@ -14198,7 +14194,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 36;
 		required_level = 16;
@@ -14325,7 +14321,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 100;
 		required_level = 80;
@@ -14452,7 +14448,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 68;
 		required_level = 48;
@@ -14579,7 +14575,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 112;
 		required_level = 100;
@@ -14704,7 +14700,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 112;
 		required_level = 105;
@@ -14829,7 +14825,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 35;
 		required_level = 15;
@@ -14957,7 +14953,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 30;
 		required_level = 10;
@@ -15084,7 +15080,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 48;
 		required_level = 28;
@@ -15208,7 +15204,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 68;
 		required_level = 48;
@@ -15336,7 +15332,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 53;
 		required_level = 33;
@@ -15460,7 +15456,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 60;
 		required_level = 40;
@@ -15588,7 +15584,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 73;
 		required_level = 53;
@@ -15715,7 +15711,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 77;
 		required_level = 57;
@@ -15842,7 +15838,7 @@
 		cast_range = 10;
 		cast_reload_delay = 1;
 		caster_state_name = "Controlling";
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		max_level = 63;
 		required_level = 43;
@@ -16616,7 +16612,7 @@
 		cast_experience = (#magic*.2);
 		cast_range = 14;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 0;
 		mana_cost_modifier = ((#magic+1)*6.9-0.7);
@@ -16636,14 +16632,14 @@
 			{
 				alteration = alter_reflect_damage;
 				description = "Symp Damage";
-				duration = 7200;
+				duration = 3600;
 				value = 50;
 			}
 			[*]
 			{
 				alteration = alter_reflect_damage_chance;
 				description = "Reflect Damage chance";
-				duration = 7200;
+				duration = 3600;
 				value = 100;
 			}
 		}
@@ -16955,7 +16951,7 @@
 		cast_experience = (#magic*0.25);
 		cast_range = 8;
 		cast_reload_delay = 1;
-		effect_duration = 7200;
+		effect_duration = 3600;
 		is_one_shot = true;
 		mana_cost = 3;
 		mana_cost_modifier = (#magic*11.25);

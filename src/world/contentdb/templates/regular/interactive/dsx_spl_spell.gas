@@ -330,7 +330,7 @@
 			cast_experience = (#magic*.25);
 			cast_range = 8;
 			cast_reload_delay = 1;
-			effect_duration = (#magic*1.95)+33;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 10;
 			mana_cost_modifier = (#magic+1)*7.2-0.7;
@@ -351,7 +351,7 @@
 						{
 							alteration = alter_combat_magic_to_nature_magic;
 							description = "transfer magic";
-							duration = (#combat_magic_level*1.95)+33;
+							duration = 3600;
 							frequency = 0;
 							value = (#combat_magic_level-#nature_magic_level);
 						}
@@ -359,7 +359,7 @@
 						{
 							alteration = alter_combat_magic;
 							description = "transfer magic";
-							duration = (#combat_magic_level*1.95)+33;
+							duration = 3600;
 							frequency = 0;
 							value = (-#nature_magic_level);
 						}
@@ -735,7 +735,7 @@
 
 			cast_range = 1;
 
-			effect_duration = 7200;
+			effect_duration = 3600;
 
 			cast_experience = (#magic*.35)+1;
 
@@ -792,7 +792,7 @@
 			cast_range = 10;
 
 
-			effect_duration = 7200;
+			effect_duration = 3600;
 
 			mana_cost = 0;
 			mana_cost_modifier = ((#magic+1)*17.4-0.7);
@@ -1065,7 +1065,7 @@
 			max_level = 36;
 			required_level = 16;
 
-			effect_duration = 7200;
+			effect_duration = 3600;
 
 			apply_enchantments = false;
 			cast_experience = (#magic*.3)+1;
@@ -1087,7 +1087,7 @@
 						{
 							alteration = alter_melee_damage_min;
 							description = "Increase minimum melee damage";
-							duration = 7200;
+							duration = 3600;
 							frequency = 0;
 							initial_delay = 0.25;
 							value = (#SPELL_REQ_LEVEL * -1) + ( 4.25 * #magic ) ; //fighters gain about 4.25 damage per level; we don't want to award quite that much.	Using #SPELL_REQ_LEVEL should allow the level to change without really breaking things.
@@ -1163,7 +1163,7 @@
 			cast_experience = (#magic*.18);
 			cast_range = 8;
 			cast_reload_delay = 1;
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = 3 * (#magic+1)*4.8-0.7; //party spell, triple cost of focused mind
@@ -1186,7 +1186,7 @@
 						{
 							alteration = alter_ranged_range;
 							description = "Range Boost";
-							duration = 7200;
+							duration = 3600;
 							value = 1 + 4 * ((#MAGIC - #SPELL_REQ_LEVEL) / (#SPELL_MAX_LEVEL - #SPELL_REQ_LEVEL));
 						}
 				}
@@ -1444,7 +1444,7 @@
 			mana_cost_modifier = (1.5 + #MAGIC)*5;
 
 			//from 60-150 seconds, for the appropriate levels
-			effect_duration = 7200; //BALANCE HERE
+			effect_duration = 3600; //BALANCE HERE
 
 			target_type_flags = tt_self;
 			usage_context_flags = uc_offensive;
@@ -1508,7 +1508,7 @@
 			//
 			mana_cost_modifier = 0;
 
-			effect_duration = 1000;
+			effect_duration = 3600;
 
 			target_type_flags = tt_self;
 			usage_context_flags = uc_offensive;
@@ -1566,7 +1566,7 @@
 			required_level = 13;
 			
 			//from 60-120 seconds, for the appropriate levels
-			effect_duration = 7200;
+			effect_duration = 3600;
 			
 			target_type_flags = tt_self;
 			usage_context_flags = uc_offensive;
@@ -1625,7 +1625,7 @@
 			mana_cost_modifier = (1.5 + #MAGIC)*5.3;
 
 			//from 60-120 seconds, for the appropriate levels
-			effect_duration = 7200;
+			effect_duration = 3600;
 
 			target_type_flags = tt_self;
 			usage_context_flags = uc_offensive;
@@ -1682,7 +1682,7 @@
 			required_level = 4;
 
 			//from 60-120 seconds, for the appropriate levels
-			effect_duration = 7200;
+			effect_duration = 3600;
 
 			target_type_flags = tt_self;
 			usage_context_flags = uc_offensive;
@@ -1740,7 +1740,7 @@
 			required_level = 37;
 
 			//from 60-120 seconds, for the appropriate levels
-			effect_duration = 7200;
+			effect_duration = 3600;
 
 			target_type_flags = tt_self;
 			usage_context_flags = uc_offensive;
@@ -1780,7 +1780,7 @@
 		}
 	[magic] //BASED ON DS1 REGENERATION
 		{
-			effect_duration = 7200; //constant
+			effect_duration = 3600; //constant
 			cast_experience = (#magic*.2);
 			mana_cost = 0;
 			mana_cost_modifier = (#MAGIC - 0.1) * 4.9;
@@ -1850,7 +1850,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 
 			mana_cost = 1.1;
@@ -2321,7 +2321,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*14-.7;
@@ -2469,7 +2469,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			max_level = 35;
 			required_level = 10;
@@ -2616,7 +2616,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*14 - .7;
@@ -2743,7 +2743,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			max_level = 56;
 			required_level = 36;
@@ -2872,7 +2872,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			max_level = 50;
 			required_level = 25;
@@ -3001,7 +3001,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			max_level = 95;
 			required_level = 65;
@@ -3127,7 +3127,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*15-.7;
@@ -3253,7 +3253,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*16-.7;
@@ -3379,7 +3379,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*14-.7;
@@ -3505,7 +3505,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*17-.7;
@@ -3635,7 +3635,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			max_level = 81;
 			required_level = 51;
@@ -3764,7 +3764,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 
 			max_level = 45;
@@ -3894,7 +3894,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 
 			max_level = 111;
@@ -4022,7 +4022,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*15-.7;
@@ -4150,7 +4150,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*17-.7;
@@ -4278,7 +4278,7 @@
 			cast_range = 10;
 			cast_reload_delay = 1;
 			caster_state_name = "Controlling";
-			effect_duration = 7200;
+			effect_duration = 3600;
 			is_one_shot = true;
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*17-.7;
@@ -4615,7 +4615,7 @@
 			max_level = 17;
 			required_level = 3;
 
-			effect_duration = 7200;
+			effect_duration = 3600;
 
 			apply_enchantments = false;
 			cast_experience = (#magic*.3)+1;
@@ -4638,7 +4638,7 @@
 						{
 							alteration = ALTER_DAMAGE_BONUS_TO_UNDEAD;
 							description = "Raise Melee Damage Versus Undead";
-							duration = 7200;
+							duration = 3600;
 							frequency = 0;
 							initial_delay = 0.25;
 							value = 1.1+(#magic*.6) * 5; //five times stronger than charged fist
@@ -4955,6 +4955,7 @@
 			attack_damage_modifier_min = ((#magic+1)**1-2.07)*(1-((1/(#magic+10))+.07));
 			cast_range = 12;
 			cast_reload_delay = 1;
+
 			effect_duration = (5+(#magic)*0.3);
 			does_damage_per_second = true;
 			mana_cost = 1;
@@ -5219,7 +5220,7 @@
 			cast_experience = (#magic*.27);
 
 			//much shorter than life balance
-			effect_duration = 15 + 30 * ((#MAGIC - #SPELL_REQ_LEVEL) / (#SPELL_MAX_LEVEL - #SPELL_REQ_LEVEL));
+			effect_duration = 900;
 
 			is_one_shot = true;
 			mana_cost = 0;
@@ -5425,7 +5426,7 @@
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*6-.7;
 
-			effect_duration = 30 + 30 * ((#MAGIC - #SPELL_REQ_LEVEL) / (#SPELL_MAX_LEVEL - #SPELL_REQ_LEVEL));
+			effect_duration = 30 + 30 * ((#MAGIC*5 - #SPELL_REQ_LEVEL) / (#SPELL_MAX_LEVEL - #SPELL_REQ_LEVEL));
 
 			//		cast_experience = 3*(#magic+1);
 			//		effect_duration = ((#magic+4)*4);
@@ -5545,7 +5546,7 @@
 			mana_cost = 0;
 			mana_cost_modifier = (#magic+1)*6-.7;
 
-			effect_duration = 30 + 30 * ((#MAGIC - #SPELL_REQ_LEVEL) / (#SPELL_MAX_LEVEL - #SPELL_REQ_LEVEL));
+			effect_duration = 30 + 30 * ((#MAGIC*5 - #SPELL_REQ_LEVEL) / (#SPELL_MAX_LEVEL - #SPELL_REQ_LEVEL));
 
 			//		effect_duration = ((#magic+4)*4);
 			apply_enchantments = false;
